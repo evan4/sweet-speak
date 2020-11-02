@@ -1,0 +1,25 @@
+.selectize-control {
+  border-radius: 15px;
+  background: $background-input;
+}
+
+.selectize-control.single {
+  .selectize-input {
+    padding: 8px 8px 8px 24px;
+    box-shadow: none;
+    background-color: $background-input;
+    background-image: none;
+    border: 0;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 42px;
+    color: $color-black;
+  }
+}
+
+.selectize-dropdown-content {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 42px;
+}

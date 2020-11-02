@@ -77,38 +77,40 @@ $grid-breakpoints: (xs: 0,
   }
 }
 
-@include media-breakpoint-up(xs) {
+@include media-breakpoint-up(xs) {}
 
-}
-
-@include media-breakpoint-up(sm) {
-
-}
+@include media-breakpoint-up(sm) {}
 
 @include media-breakpoint-up(md) {
-  .col-4{
+  .col-4 {
     float: left;
     width: 49%;
   }
 }
 
 @include media-breakpoint-up(lg) {
-  .col-4{
+  .col-4 {
     width: 32%;
   }
-  .col-9{
+
+  .col-9 {
     float: left;
     width: 74%;
   }
-  .col-3{
-    float: right;
+
+  .col-3 {
+    float: left;
     width: 24%;
+  }
+
+  .col-right {
+    float: right;
   }
 }
 
 @include media-breakpoint-up(xl) {
-  .col-4{
+  .col-4 {
     width: 25%;
   }
- 
+
 }

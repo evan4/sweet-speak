@@ -19,6 +19,10 @@ const development = {
       filename: '404.html',
       template: '404.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'add.html',
+      template: 'add.html',
+    }),
     new MiniCssExtractPlugin({
       filename: filename('css')
     })

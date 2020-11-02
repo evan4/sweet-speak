@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Webpack ES6+ Sass Boilerplate</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrap">
+      <div class="header-invert">
+        <a href="#" class="header-invert__day"></a>
+        <a href="#" class="header-invert__night"></a>
+      </div>
+      <ul class="header-menu">
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Знакомства и свидания</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Отношения в парах</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Полезное и интересное</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">BDSM и Фетиш</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Обучение</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Одежда и аксессуары</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Тусовки</a>
+        </li>
+      </ul>
+      <a href="#" class="header__profile button button_red">
+        <span class="header__span">Профиль</span class="header__span">
+      </a>
+    </div>
+  </header>
+  <main class="main">
+    <div class="wrap">
+      <section class="top clearfix">
+        <a href="/" class="top__logo"></a>
+        <form action="" method="get" class="top__form">
+          <input type="search" class="top__search" placeholder="Например, секс втроем">
+        </form>
+        <a href="#" class="button button_red top__add">
+          <i class="top__plus"></i>
+          <span>Добавить статью</span>
+        </a>
+        <ul class="top-socials">
+          <li>
+            <a href="#" class="top-socials__link top-socials__link_telegram"></a>
+          </li>
+          <li>
+            <a href="#" class="top-socials__link top-socials__link_instagram"></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="wrap">
+      <div class="col-3">
+        <aside class="aside">
+          <div class="aside-user">
+            <div class="aside-user-image">
+              <img src="/img/user.png" alt="user" class="image-responsive">
+              <a href="" class="button button_red aside-user__icon"></a>
+            </div>
+            <p class="aside-user__name">SuperGirlAnastasia</p>
+            <a href="mailto:SuperGirlAnastasia@mail.com" class="aside-user__email">SuperGirlAnastasia@mail.com</a>
+          </div>
+          <ul class="aside-menu">
+            <li class="aside-menu__item">
+              <a href="#" class="aside-menu__link">
+                <i class="aside-menu__link_personal"></i>Личные сообщения</a>
+            </li>
+            <li class="aside-menu__item">
+              <a href="#" class="aside-menu__link">
+                <i class="aside-menu__link_profile"></i>Профиль</a>
+            </li>
+            <li class="aside-menu__item">
+              <a href="#" class="aside-menu__link">
+                <i class="aside-menu__link_file"></i>Анкета знакомств</a>
+            </li>
+            <li class="aside-menu__item">
+              <a href="#" class="aside-menu__link">
+                <i class="aside-menu__link_friends"></i>Мои друзья</a>
+            </li>
+            <li class="aside-menu__item">
+              <a href="#" class="aside-menu__link aside-menu__link_active">
+                <i class="aside-menu__link_publish"></i>Создать публикацию</a>
+            </li>
+            <li class="aside-menu__item">
+              <a href="#" class="aside-menu__link">
+                <i class="aside-menu__link_recent"></i>Последние публикации</a>
+            </li>
+            <li class="aside-menu__item">
+              <a href="#" class="aside-menu__link">
+                <i class="aside-menu__link_pro"></i>Pro версия</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <div class="col-9 col-right">
+        <h2 class="caption caption_h2 caption_add">Создать новую публикацию</h2>
+        <form action="" method="POST" class="form" enctype="multipart/form-data">
+          <div class="form-block form-block_divide">
+            <div class="form-block__item">
+              <label for="category" class="form__label">Выберите категорию:</label>
+              <select name="category" id="category" class="category">
+                <option value="1">Знакомства и свидания</option>
+                <option value="2">Отношения в парах</option>
+                <option value="3">Интересное и полезное</option>
+              </select>
+            </div>
+            <div class="form-block__item">
+              <label for="subcategory" class="form__label">Выберите подкатегорию:</label>
+              <select name="subcategory" id="subcategory" class="subcategory">
+                <option value="1">Знакомства и свидания</option>
+                <option value="2">Отношения в парах</option>
+                <option value="3">Интересное и полезное</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-block form-block_title">
+            <label for="title" class="form__label">Заголовок статьи:</label>
+            <input type="text" placeholder="Если тут будет нап |" name="title" class="form__input" id="title">
+          </div>
+          <div class="form-block">
+            <input type="file" class="form__input" name="file" multiple>
+          </div>
+          <div class="form-block">
+            <label for="text" class="form__label">Текст статьи:</label>
+            <textarea name="text" id="text" rows="6" class="form__textarea"
+              placeholder="Введите текст статьи"></textarea>
+          </div>
+          <button type="submit" class="button button_red form__button">
+            Разместить публикацию <i></i></button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer clearfix">
+    <div class="wrap">
+      <div class="footer__wrap">
+        <div class="footer-socials">
+          <a href="/" class="footer-socials__logo"></a>
+          <ul class="footer-socials-list">
+            <li>
+              <a href="#" class="footer-socials-list__link footer-socials-list__link_telegram"></a>
+            </li>
+            <li>
+              <a href="#" class="footer-socials-list__link footer-socials-list__link_instagram"></a>
+            </li>
+            <li>
+              <a href="#" class="footer-socials-list__link footer-socials-list__link_vk"></a>
+            </li>
+            <li>
+              <a href="#" class="footer-socials-list__link footer-socials-list__link_twitter"></a>
+            </li>
+            <li>
+              <a href="#" class="footer-socials-list__link footer-socials-list__link_facebook"></a>
+            </li>
+          </ul>
+          <p class="footer-socials__text">Мы позиционируем себя как новую социальную сеть, где любой желающий может
+            анонимно говорить и задать вопросы, писать свое мнение</p>
+          <a href="#" class="footer-socials__more">Читать подробнее о проекте</a>
+          <p class="footer-socials__caution">Материалы сайта предназначены для возрасной категории 18+</p>
+        </div>
+        <ul class="footer-menu footer-menu_big">
+          <li>
+            <a href="#">Знакомства и свидания</a>
+          </li>
+          <li>
+            <a href="#">Отношения в парах</a>
+          </li>
+          <li>
+            <a href="#">Полезное и интересное</a>
+          </li>
+          <li>
+            <a href="#">BDSM и Фетиш</a>
+          </li>
+          <li>
+            <a href="#">Обучение</a>
+          </li>
+          <li>
+            <a href="#">Одежда и аксессуары</a>
+          </li>
+          <li>
+            <a href="#">Тусовки</a>
+          </li>
+          <li>
+            <a href="#">Все авторы</a>
+          </li>
+        </ul>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe__caption">Подпишитесь на уведомления</p>
+          <p class="footer-subscribe__info">Саатьи, новости ресурса и уведомления</p>
+          <form action="" method="post" class="footer-form">
+            <input type="email" class="footer-form__input" placeholder="Введите E-mail">
+            <input type="submit" class="footer-form__submit button button_red" value="Подписаться">
+          </form>
+        </div>
+        <div class="footer-profile">
+          <a href="#" class="header__profile header__profile_outline button button_outline">
+            <span class="header__span">Профиль</span>
+          </a>
+          <ul class="footer-menu footer-menu_right">
+            <li>
+              <a href="#">Политика конфиденциальности</a>
+            </li>
+            <li>
+              <a href="#">О проекте</a>
+            </li>
+            <li>
+              <a href="#">Правила</a>
+            </li>
+          </ul>
+          <p class="footer__copyright">2020 &copy; Все права защищены</p>
+          <p class="footer__logo-maximus">Разработка и продвижение сайта</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

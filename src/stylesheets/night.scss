@@ -1,11 +1,15 @@
 @import '~normalize.css/normalize.css';
 
+
 @import './settingы/variables_dark';
 @import './settingы/my-reset';
-@import './base';
 @import "./mixin";
-
 @import './media';
+@import './base';
+
+@import './libs/magnific/magnific';
+@import './libs/selectize/selectize.default.scss';
+@import './libs/selectize/selectize';
 
 @import './components/button';
 
@@ -33,6 +37,9 @@
 @import './components/aside/socials';
 @import './components/aside/posts-list';
 @import './components/aside/aside-gallery';
+@import './components/aside/aside-user';
+@import './components/aside/aside-menu';
+
 @import './components/comments';
 
 @import './components/article-night';
@@ -43,3 +50,4 @@
 
 @import './components/apps';
 @import './components/notfound';
+@import './components/form/form';
