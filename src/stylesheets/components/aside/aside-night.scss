@@ -1,0 +1,32 @@
+.aside {
+  padding: 30px 5% 30px 11%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &__caption {
+    margin: 0;
+    padding-bottom: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+  }
+
+  &-ad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 267px;
+    border-radius: 15px;
+    background-color: #5A5A5A;
+
+    span {
+      color: $color-white;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 32px;
+    }
+  }
+}

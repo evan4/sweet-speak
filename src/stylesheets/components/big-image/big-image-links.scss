@@ -1,0 +1,71 @@
+.big-image-links {
+  &__item {
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: middle;
+
+    &_favour {
+      position: relative;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: $color-red;
+
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: $color-white;
+        -webkit-mask-image: url('../images/thumb-up.svg');
+        mask-image: url('../images/thumb-up.svg');
+        width: 21px;
+        height: 21px;
+        top: 11px;
+        left: 14px;
+      }
+    }
+
+    &_oppose {
+      margin: 0 14px;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transform: rotate(-180deg);
+
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: $color-white;
+        -webkit-mask-image: url('../images/thumb-up.svg');
+        mask-image: url('../images/thumb-up.svg');
+        width: 21px;
+        height: 21px;
+        top: 11px;
+        left: 14px;
+      }
+    }
+
+    &_share {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: $color-white;
+
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: $color-red;
+        -webkit-mask-image: url('../images/share.svg');
+        mask-image: url('../images/share.svg');
+        width: 32px;
+        height: 32px;
+        top: 6px;
+        left: 6px;
+      }
+    }
+  }
+}

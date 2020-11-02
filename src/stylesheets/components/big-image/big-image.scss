@@ -1,0 +1,167 @@
+.big-image {
+  position: relative;
+  height: 628px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 23px 19px 36px;
+  margin-bottom: 47px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  color: $color-white-always;
+
+  &_main {
+    width: 100%;
+    max-width: 913px;
+    height: 696px;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+
+  &__caption {
+    margin: 23px 0 0 0;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $color-white-always;
+
+    &_main {
+      text-align: left;
+    }
+
+    &_small {
+      margin: 0;
+      text-align: left;
+      line-height: 28px;
+    }
+
+    &_center {
+      margin: 0;
+      text-align: left;
+      line-height: 28px;
+    }
+
+    &_four {
+      margin: 0;
+      text-align: left;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    bottom: 26px;
+
+    &_small {
+      bottom: 28px;
+    }
+
+    &_center {
+      bottom: 58px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .big-image-bottom {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .big-image {
+    &__caption {
+      padding: 0 1%;
+      font-size: 20px;
+
+      &_small {
+        padding: 0 2%;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .big-image-bottom {
+    width: 100%;
+  }
+
+  .big-image {
+    &__caption {
+      padding: 0 4%;
+      font-size: 30px;
+
+      &_small {
+        padding: 0 2%;
+        font-size: 22px;
+      }
+
+      &_center {
+        padding: 0 6% 0 3%;
+        font-size: 22px;
+      }
+
+      &_four {
+        padding: 0 2%;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .big-image-bottom {
+    margin-top: 0;
+    width: 93%;
+    position: absolute;
+
+    &_center {
+      margin-left: 3%;
+      bottom: 0;
+    }
+  }
+
+  .big-image {
+    &__caption {
+      padding: 0 7%;
+      font-size: 40px;
+
+      &_small {
+        padding: 0 2%;
+        font-size: 22px;
+      }
+
+      &_four {
+        padding: 0 2%;
+        font-size: 18px;
+      }
+
+      &_main {
+        padding: 0 5% 0 3%;
+      }
+
+      &_center {
+        padding: 0 6% 0 3%;
+        font-size: 22px;
+      }
+    }
+
+  }
+
+}
+@include media-breakpoint-up(lg) {
+  .big-image-bottom {
+
+    &_center {
+      bottom: 25px;
+    }
+  }
+}

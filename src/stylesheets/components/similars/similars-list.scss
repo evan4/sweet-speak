@@ -1,0 +1,73 @@
+.similars-list {
+  padding-top: 150px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 23px;
+  color: $color-white;
+
+  &_big {
+    padding: 20px 0;
+  }
+
+  &_empty {
+    padding-top: 180px;
+  }
+
+  &_center {
+    width: auto;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 1px 10px;
+    border-radius: 15px;
+    background: rgba(40, 40, 40, 0.6);
+    backdrop-filter: blur(10px);
+
+    &_center {
+      padding: 4px 12px;
+    }
+
+    i {
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: middle;
+      background-color: $color-white;
+    }
+
+    &_visibility {
+      margin-right: 7px;
+
+      i {
+        -webkit-mask-image: url('../images/visibility.svg');
+        mask-image: url('../images/visibility.svg');
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    &_heart {
+      margin-right: 7px;
+
+      i {
+        -webkit-mask-image: url('../images/heart.svg');
+        mask-image: url('../images/heart.svg');
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    &_comments {
+      i {
+        vertical-align: baseline;
+        -webkit-mask-image: url('../images/comments.svg');
+        mask-image: url('../images/comments.svg');
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+  }
+}

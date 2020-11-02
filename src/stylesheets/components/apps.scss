@@ -1,0 +1,126 @@
+.apps {
+  position: relative;
+  margin: 20px 0 40px;
+  padding: 40px 4%;
+  border-radius: 15px;
+  background-color: $color-white-always;
+  width: 100%;
+  color: $color-black-always;
+
+  &-list {
+    &__item {
+      display: inline-block;
+      vertical-align: middle;
+      width: 274px;
+      height: 85px;
+      border: 1px solid #DDDDDD;
+      border-radius: 15px;
+
+      &:first-child {
+        margin-right: 20px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__link {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 15px 0 0 32px;
+
+      i {
+        margin-right: 20px;
+      }
+    }
+
+    &__text {
+      float: right;
+      display: block;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 26px;
+      color: $color-black-always;
+
+      span {
+        display: block;
+      }
+    }
+
+    &__appstore {
+      float: left;
+      display: block;
+      width: 53px;
+      height: 53px;
+      -webkit-mask-image: url('../images/appstore.svg');
+      mask-image: url('../images/appstore.svg');
+      background-color: $color-red-menu;
+    }
+
+    &__googleplay {
+      float: left;
+      display: block;
+      width: 53px;
+      height: 53px;
+      -webkit-mask-image: url('../images/google-play.svg');
+      mask-image: url('../images/google-play.svg');
+      background-color: $color-red-menu;
+    }
+  }
+
+}
+
+@include media-breakpoint-up(xs) {
+  .apps {
+    &__caption {
+      font-size: 26px;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {
+  .apps {
+    &__caption {
+      font-size: 32px;
+      padding-right: 34%;
+      margin-bottom: 31px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .apps {
+    &__bg {
+      position: absolute;
+      width: 354px;
+      height: 328px;
+      right: 0;
+      bottom: 0;
+      background: url('../images/apps.png');
+      background-repeat: no-repeat;
+      background-position: right -150px bottom;
+    }
+
+    &__caption {
+      font-size: 36px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .apps {
+    margin-bottom: 54px;
+    &__bg {
+      background-position: right -80px bottom;
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .apps {
+    &__bg {
+      background-position: right bottom;
+    }
+
+  }
+}

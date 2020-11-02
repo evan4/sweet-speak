@@ -1,0 +1,46 @@
+@import '~normalize.css/normalize.css';
+
+@import './settingы/variables';
+@import './settingы/my-reset';
+@import './base';
+@import "./mixin";
+
+@import './media';
+
+@import './components/button';
+
+@import './components/header/header';
+@import './components/header/header-menu';
+
+@import './components/footer/footer';
+@import './components/footer/footer-socials';
+@import './components/footer/footer-subscribe';
+@import './components/footer/footer-form';
+@import './components/footer/footer-menu';
+
+@import './components/top';
+@import './components/top-main';
+@import './components/top-menu';
+@import './components/top-images';
+@import './components/big-image/big-image';
+@import './components/big-image/big-image-breadcrumbs';
+@import './components/big-image/big-image-list';
+@import './components/big-image/big-image-links';
+
+
+@import './components/aside/aside';
+@import './components/aside/categories';
+@import './components/aside/socials';
+@import './components/aside/posts-list';
+@import './components/aside/aside-gallery';
+@import './components/comments';
+
+@import './components/article';
+@import './components/form-comment';
+@import './components/similars/similars';
+@import './components/similars/similars-list';
+@import './components/similars/similars-details';
+
+@import './components/apps';
+
+@import './components/notfound';

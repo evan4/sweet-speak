@@ -1,0 +1,23 @@
+.categories {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+  }
+
+  &__text {
+    padding-top: 5px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  &__amount {
+    height: 25px;
+    padding: 5px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: $color-red;
+    border-radius: 888px;
+    color: $color-white-always;
+  }
+}

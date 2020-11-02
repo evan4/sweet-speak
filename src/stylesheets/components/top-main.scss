@@ -1,0 +1,95 @@
+.top-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__caption {
+    position: relative;
+    padding-left: 59px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      top: 0;
+      left: 0;
+    }
+
+    &_dating {
+      &:before {
+        -webkit-mask-image: url('../images/gender.svg');
+        mask-image: url('../images/gender.svg');
+        background-color: $color-yellow;
+      }
+    }
+
+    &_relations {
+      &:before {
+        -webkit-mask-image: url('../images/couple.svg');
+        mask-image: url('../images/couple.svg');
+        background-color: #0091C8;
+      }
+    }
+
+    &_interesting {
+      &:before {
+        -webkit-mask-image: url('../images/interesting.svg');
+        mask-image: url('../images/interesting.svg');
+        background: #4FCD3A;
+      }
+    }
+
+    &_fetish {
+      &:before {
+        -webkit-mask-image: url('../images/fetish.svg');
+        mask-image: url('../images/fetish.svg');
+        background: #55ACEE;
+      }
+    }
+
+    &_teaching{
+      &:before {
+        -webkit-mask-image: url('../images/teaching.svg');
+        mask-image: url('../images/teaching.svg');
+        background: #55ACEE;
+      }
+    }
+    
+    &_accessories{
+      &:before {
+        -webkit-mask-image: url('../images/accessories.svg');
+        mask-image: url('../images/accessories.svg');
+        background: #27AF8F;
+      }
+    }
+
+    &_party{
+      &:before {
+        -webkit-mask-image: url('../images/party.svg');
+        mask-image: url('../images/party.svg');
+        background: #D8621F;
+      }
+    }
+  }
+
+  &-buttons {
+    &__more {
+      text-align: center;
+      line-height: 2;
+      color: $color-red;
+      height: 36px;
+      width: 188px;
+
+      span {
+        margin-left: 10px;
+        margin-right: -20px;
+      }
+    }
+
+    .button {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

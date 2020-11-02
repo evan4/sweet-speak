@@ -1,0 +1,32 @@
+.footer-menu {
+  margin: 28px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  &_big {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 0;
+    ;
+
+    li {
+      margin-bottom: 14px;
+    }
+  }
+
+  &_right {
+    li {
+      margin-bottom: 17px;
+    }
+  }
+
+  li {
+    a {
+      color: $color-black;
+    }
+  }
+}

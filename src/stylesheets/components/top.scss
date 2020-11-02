@@ -1,0 +1,213 @@
+.top {
+  margin-bottom: 22px;
+
+  &__logo {
+    display: block;
+    background: url('../images/logo.png') no-repeat center;
+    background-size: cover;
+    height: 32px;
+    width: 310px;
+  }
+
+  &__search {
+    position: relative;
+    height: 49px;
+    background: $color-white;
+    border-radius: 999px;
+    border: 0;
+    text-indent: 29px;
+    width: 100%;
+    background-image: url('../images/zoom.svg');
+    background-position: 95% center;
+    background-repeat: no-repeat;
+  }
+
+  &__add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 221px;
+    height: 49px;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: center;
+
+    }
+  }
+
+  &__plus {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: $color-red;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 19px;
+    height: 19px;
+    border-radius: 100px;
+    margin-right: 15px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: url('../images/plus.svg') no-repeat center;
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  &-socials {
+    text-align: right;
+
+    li {
+      display: inline-block;
+
+      &:first-child {
+        margin-right: 17px;
+      }
+
+      margin-right: -1%;
+    }
+
+    &__link {
+      display: inline-block;
+      height: 49px;
+      width: 49px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      &_telegram {
+        background-image: url('../images/telegram.svg');
+      }
+
+      &_instagram {
+        background-image: url('../images/instagram.svg');
+      }
+    }
+  }
+
+}
+
+
+@include media-breakpoint-up(xs) {
+  .top__logo {
+    float: left;
+    margin-top: 20px;
+  }
+
+  .top__form {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .top__add {
+    float: left;
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .top-socials {
+    float: left;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .top__logo {
+    float: left;
+    margin-top: 20px;
+  }
+
+  .top__form {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .top__add {
+    float: left;
+    width: 50%;
+  }
+
+  .top-socials {
+    float: right;
+    width: 50%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .top__logo {
+    float: left;
+    margin-top: 20px;
+  }
+
+  .top__form {
+    float: left;
+    width: 50%;
+    margin: 10px 5%;
+  }
+
+  .top__add {
+    float: left;
+    width: 25%;
+  }
+
+  .top-socials {
+    float: right;
+    width: 25%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .top__logo {
+    float: left;
+    margin-top: 9px;
+  }
+
+  .top__form {
+    float: left;
+    width: 37%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 0;
+  }
+
+  .top__add {
+    float: left;
+    width: 16%;
+  }
+
+  .top-socials {
+    float: right;
+    width: 12%;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .top__logo {
+    float: left;
+  }
+
+  .top__form {
+    float: left;
+    width: 40%;
+    margin-left: 4%;
+    margin-right: 3%;
+  }
+
+  .top__add {
+    float: left;
+    width: 16%;
+  }
+
+  .top-socials {
+    float: right;
+    width: 11%;
+  }
+}

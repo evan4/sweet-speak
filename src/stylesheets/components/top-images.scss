@@ -1,0 +1,149 @@
+.top-images {
+
+  padding-bottom: 57px;
+
+  &-left {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-center {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 53px 0 43px;
+
+    &>div {
+      width: 470px;
+      height: 378px;
+    }
+
+    &_three {
+      &>div {
+        height: 378px;
+        width: 418px;
+      }
+    }
+
+    &_four {
+      &>div {
+        height: 349px;
+        width: 309px;
+      }
+    }
+  }
+
+  &-right {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &__item {
+    width: 503px;
+    position: relative;
+    padding: 19px 31px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 348px;
+  }
+
+}
+
+@include media-breakpoint-up(xs) {
+  .top-images {
+    justify-content: center;
+
+    &-left,
+    &-right {
+      justify-content: center;
+    }
+
+    &__item {
+      margin-bottom: 10px;
+    }
+
+    &-right {
+      margin-top: 10px;
+    }
+  }
+
+}
+
+@include media-breakpoint-up(xs) {
+  .top-images {
+    justify-content: center;
+
+    &-center {
+      justify-content: space-around;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .top-images {
+    &__youtube {
+      display: block;
+      margin-top: -50px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .top-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1920px;
+    margin: 0 auto;
+    justify-content: center;
+
+    &__item {
+      margin-bottom: 0;
+    }
+
+    &-right {
+      justify-content: space-between;
+      margin-top: 0;
+    }
+
+    &__youtube {
+      display: block;
+      margin-top: -50px;
+      margin-bottom: 10px;
+    }
+
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .top-images {
+    &-left {
+      justify-content: space-between;
+      width: 503px;
+    }
+
+    &-center {
+      justify-content: space-between;
+
+      &_four {
+        margin-top: 42px;
+      }
+
+    }
+
+  }
+}
+
+@include media-breakpoint-up(xxxl) {
+  .top-images {
+    justify-content: space-between;
+
+    &-left,
+    &-right {
+      width: 503px;
+    }
+
+  }
+}

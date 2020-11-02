@@ -1,0 +1,81 @@
+.article {
+  margin-bottom: 35px;
+
+  &_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__image {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &_quote {
+    padding: 30px 4%;
+    background: rgba(255, 255, 255, 0.1) url('../images/quote-night.svg') no-repeat 95% top;
+    border-radius: 15px;
+  }
+
+  &__button {
+    width: 220px;
+    height: 49px;
+    text-align: center;
+    line-height: 3;
+  }
+
+  &__text {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+
+    &_quote {
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 28px;
+      border-radius: 15px;
+    }
+
+    &_bold {
+      font-weight: 600;
+    }
+
+    &_author {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(xs) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {
+  .col-4 {
+    float: left;
+    width: 49%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .article {
+
+    &__image {
+      width: 48%;
+    }
+
+    &-block {
+      width: 45%;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {}

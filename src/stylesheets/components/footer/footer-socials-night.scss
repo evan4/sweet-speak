@@ -1,0 +1,87 @@
+.footer-socials {
+  font-family: 'Montserrat', sans-serif;
+
+  &__logo {
+    display: block;
+    background: url('../images/logo-night.png') no-repeat center;
+    background-size: cover;
+    width: 309px;
+    height: 32px;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0 28px;
+
+    li {
+      display: inline-block;
+    }
+
+    &__link {
+      height: 49px;
+      width: 49px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      &_telegram {
+        background-image: url('../images/telegram.svg');
+      }
+
+      &_instagram {
+        background-image: url('../images/instagram.svg');
+      }
+
+      &_vk {
+        background-image: url('../images/vk.svg');
+      }
+
+      &_twitter {
+        background-image: url('../images/twitter.svg');
+      }
+
+      &_facebook {
+        background-image: url('../images/facebook.svg');
+      }
+    }
+  }
+
+  &__text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+  }
+
+  &__more {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: $color-red;
+  }
+
+  &__caution {
+    position: relative;
+    max-width: 250px;
+    padding-left: 30px;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 19px;
+      width: 19px;
+      border-radius: 10px;
+      background-color: $color-red;
+    }
+  }
+}

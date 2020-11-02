@@ -1,0 +1,45 @@
+.big-image-breadcrumbs {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  &__item {
+    display: inline-block;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: $color-white;
+        -webkit-mask-image: url('../images/chevron-right.svg');
+        mask-image: url('../images/chevron-right.svg');
+        width: 9px;
+        height: 9px;
+        top: 10px;
+        right: -20px;
+      }
+    }
+
+  }
+
+  a {
+    color: $color-white;
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .big-image-breadcrumbs {
+    padding-top: 150px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .big-image-breadcrumbs {
+    padding-top: 228px;
+  }
+}

@@ -1,0 +1,25 @@
+.similars-details {
+  display: block;
+
+  &__item {
+
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+
+    &_history {
+      i {
+        display: inline-block;
+        margin: 0 10px 0 20px;
+        vertical-align: middle;
+        background-color: $color-black;
+        -webkit-mask-image: url('../images/history.svg');
+        mask-image: url('../images/history.svg');
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}

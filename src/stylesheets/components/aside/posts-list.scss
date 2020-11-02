@@ -1,0 +1,33 @@
+.posts-list {
+  margin-top: 10px;
+  margin-bottom: 12px;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__image {
+    height: 77px;
+    margin-right: 11%;
+    border-radius: 20px;
+  }
+
+  &__text {
+    display: block;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: $color-black;
+  }
+
+  &__author {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}

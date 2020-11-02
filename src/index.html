@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Webpack ES6+ Sass Boilerplate</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrap">
+      <div class="header-invert">
+        <a href="#" class="header-invert__day"></a>
+        <a href="#" class="header-invert__night"></a>
+      </div>
+      <ul class="header-menu">
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Знакомства и свидания</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Отношения в парах</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Полезное и интересное</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">BDSM и Фетиш</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Обучение</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Одежда и аксессуары</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#" class="header-menu__link">Тусовки</a>
+        </li>
+      </ul>
+      <a href="#" class="header__profile button button_red">
+        <span class="header__span">Профиль</span class="header__span">
+      </a>
+    </div>
+  </header>
+  <main class="main">
+    <div class="wrap">
+      <section class="top clearfix">
+        <a href="/" class="top__logo"></a>
+        <form action="" method="get" class="top__form">
+          <input type="search" class="top__search" placeholder="Например, секс втроем">
+        </form>
+        <a href="#" class="button button_red top__add">
+          <i class="top__plus"></i>
+          <span>Добавить статью</span>
+        </a>
+        <ul class="top-socials">
+          <li>
+            <a href="#" class="top-socials__link top-socials__link_telegram"></a>
+          </li>
+          <li>
+            <a href="#" class="top-socials__link top-socials__link_instagram"></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="top-images">
+      <div class="top-images-left">
+        <div class="top-images__item" style="background-image: url(img/article-big.jpg);">
+          <div class="similars-image-top similars-image-top_small">
+            <span class="similars-image-top__text">Отношения в парах</span>
+          </div>
+          <button class="top-images__youtube"><img src="/img/youtube.png" alt="youtube"></button>
+          <p class="big-image__caption big-image__caption_small">Чем отличаются нездоровые отношения от отношений
+            партнерских и безопасных</p>
+          <div class="big-image-bottom big-image-bottom_small">
+            <ul class="big-image-list">
+              <li class="big-image-list__item big-image-list__item_oval
+               big-image-list__item_visibility">16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_oval big-image-list__item_heart">16<i></i></li>
+              <li
+                class="big-image-list__item big-image-list__item_oval big-image-list__item_comments big-image-list__item_small">
+                16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_author">Ksenia69
+              </li>
+              <li class="big-image-list__item big-image-list__item_date">3 часа назад</li>
+            </ul>
+          </div>
+        </div>
+        <div class="top-images__item" style="background-image: url(img/article-big1.jpg);">
+          <div class="similars-image-top similars-image-top_small">
+            <span class="similars-image-top__text">Отношения в парах</span>
+          </div>
+          <p class="big-image__caption big-image__caption_small">Чем отличаются нездоровые отношения от отношений
+            партнерских и безопасных</p>
+          <div class="big-image-bottom big-image-bottom_small">
+            <ul class="big-image-list">
+              <li class="big-image-list__item big-image-list__item_oval
+               big-image-list__item_visibility">16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_oval big-image-list__item_heart">16<i></i></li>
+              <li
+                class="big-image-list__item big-image-list__item_oval big-image-list__item_comments big-image-list__item_small">
+                16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_author">Ksenia69
+              </li>
+              <li class="big-image-list__item big-image-list__item_date">3 часа назад</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="big-image big-image_main" style="background-image: url(img/big-image.jpg);">
+        <div class="similars-image-top similars-image-top_big">
+          <span class="similars-image-top__text">Отношения в парах</span>
+        </div>
+        <p class="big-image__caption big-image__caption_main">Чем отличаются нездоровые отношения от отношений
+          партнерских и безопасных</p>
+        <div class="big-image-bottom">
+          <ul class="big-image-list">
+            <li class="big-image-list__item big-image-list__item_oval big-image-list__item_visibility">16<i></i></li>
+            <li class="big-image-list__item big-image-list__item_oval big-image-list__item_heart">16<i></i></li>
+            <li class="big-image-list__item big-image-list__item_oval big-image-list__item_comments">16<i></i></li>
+            <li class="big-image-list__item big-image-list__item_author">
+              Автор: <a href="#">Ksenia69</a>
+            </li>
+            <li class="big-image-list__item big-image-list__item_date big-image-list__item_right">3 часа назад</li>
+          </ul>
+        </div>
+      </div>
+      <div class="top-images-right">
+        <div class="top-images__item" style="background-image: url(img/article-big2.jpg);">
+          <div class="similars-image-top similars-image-top_small">
+            <span class="similars-image-top__text">Отношения в парах</span>
+          </div>
+          <p class="big-image__caption big-image__caption_small">Чем отличаются нездоровые отношения от отношений
+            партнерских и безопасных</p>
+          <div class="big-image-bottom big-image-bottom_small">
+            <ul class="big-image-list">
+              <li class="big-image-list__item big-image-list__item_oval
+               big-image-list__item_visibility">16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_oval big-image-list__item_heart">16<i></i></li>
+              <li
+                class="big-image-list__item big-image-list__item_oval big-image-list__item_comments big-image-list__item_small">
+                16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_author">Ksenia69
+              </li>
+              <li class="big-image-list__item big-image-list__item_date">3 часа назад</li>
+            </ul>
+          </div>
+        </div>
+        <div class="top-images__item" style="background-image: url(img/article-big3.jpg);">
+          <div class="similars-image-top similars-image-top_small">
+            <span class="similars-image-top__text">Отношения в парах</span>
+          </div>
+          <p class="big-image__caption big-image__caption_small">Чем отличаются нездоровые отношения от отношений
+            партнерских и безопасных</p>
+          <div class="big-image-bottom big-image-bottom_small">
+            <ul class="big-image-list">
+              <li class="big-image-list__item big-image-list__item_oval
+               big-image-list__item_visibility">16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_oval big-image-list__item_heart">16<i></i></li>
+              <li
+                class="big-image-list__item big-image-list__item_oval big-image-list__item_comments big-image-list__item_small">
+                16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_author">Ksenia69
+              </li>
+              <li class="big-image-list__item big-image-list__item_date">3 часа назад</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="wrap wrap_main">
+      <div class="col-9">
+        <div class="top-main">
+          <h1 class="caption caption_h1 top-main__caption top-main__caption_dating">Знакомства и свидания</h1>
+          <div class="top-main-buttons">
+            <button class="button button_red button_plus"><i></i></button>
+            <a href="#" class="button button_outline top-main-buttons__more">Читать все <span
+                class="categories__amount">500+</span>
+            </a>
+          </div>
+        </div>
+        <ul class="top-menu">
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link">Женщина ищет</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link top-menu__link_active">Мужчина ищет</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link">Пара ищет</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link">Места для свиданий</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link">Сайты и места для знакомств</a>
+          </li>
+        </ul>
+        <ul class="similars similars_margin">
+          <li class="similars__item">
+            <div class="similars-image" style="background-image: url('img/article.jpg');">
+              <div class="similars-image-top">
+                <span class="similars-image-top__text">Мужчина ищет</span>
+              </div>
+              <ul class="similars-list">
+                <li class="similars-list__item similars-list__item_visibility">15<i></i></li>
+                <li class="similars-list__item similars-list__item_heart">15<i></i></li>
+                <li class="similars-list__item similars-list__item_comments">8<i></i></li>
+              </ul>
+            </div>
+            <p class="similars__caption">История о том, как я впервые зашел на этот сайт</p>
+            <p class="similars__text">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:
+            </p>
+            <ul class="similars-details">
+              <li class="similars-details__item">Ksenia69</li>
+              <li class="similars-details__item similars-details__item_history"><i></i>3 часа назад</li>
+            </ul>
+          </li>
+          <li class="similars__item">
+            <div class="similars-image" style="background-image: url('img/article4.jpg');">
+              <div class="similars-image-top">
+                <span class="similars-image-top__text">Мужчина ищет</span>
+              </div>
+              <ul class="similars-list">
+                <li class="similars-list__item similars-list__item_visibility">15<i></i></li>
+                <li class="similars-list__item similars-list__item_heart">15<i></i></li>
+                <li class="similars-list__item similars-list__item_comments">8<i></i></li>
+              </ul>
+            </div>
+            <p class="similars__caption">История о том, как я впервые зашел на этот сайт</p>
+            <p class="similars__text">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:
+            </p>
+            <ul class="similars-details">
+              <li class="similars-details__item">Ksenia69</li>
+              <li class="similars-details__item similars-details__item_history"><i></i>3 часа назад</li>
+            </ul>
+          </li>
+          <li class="similars__item">
+            <div class="similars-image" style="background-image: url('img/article5.jpg');">
+              <div class="similars-image-top">
+                <span class="similars-image-top__text">Мужчина ищет</span>
+              </div>
+              <ul class="similars-list">
+                <li class="similars-list__item similars-list__item_visibility">15<i></i></li>
+                <li class="similars-list__item similars-list__item_heart">15<i></i></li>
+                <li class="similars-list__item similars-list__item_comments">8<i></i></li>
+              </ul>
+            </div>
+            <p class="similars__caption">История о том, как я впервые зашел на этот сайт</p>
+            <p class="similars__text">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:
+            </p>
+            <ul class="similars-details">
+              <li class="similars-details__item">Ksenia69</li>
+              <li class="similars-details__item similars-details__item_history"><i></i>3 часа назад</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="apps">
+          <h2 class="caption caption_h2 apps__caption">Скачивайте наше приложение на мобильные устройства:</h2>
+          <ul class="apps-list">
+            <li class="apps-list__item">
+              <a href="#" class="apps-list__link">
+                <i class="apps-list__appstore"></i>
+                <span class="apps-list__text">
+                  <span>Скачать</span> в App Store
+                </span>
+              </a>
+            </li>
+            <li class="apps-list__item">
+              <a href="#" class="apps-list__link">
+                <i class="apps-list__googleplay"></i>
+                <span class="apps-list__text">
+                  <span>Скачать</span> в Google Play
+                </span>
+              </a>
+            </li>
+          </ul>
+          <div class="apps__bg"></div>
+        </div>
+        <div class="top-main">
+          <h1 class="caption caption_h1 top-main__caption top-main__caption_relations">Отношения в парах</h1>
+          <div class="top-main-buttons">
+            <button class="button button_red button_plus"><i></i></button>
+            <a href="#" class="button button_outline top-main-buttons__more">Читать все <span
+                class="categories__amount">500+</span>
+            </a>
+          </div>
+        </div>
+        <ul class="top-menu">
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link">Swing</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link">SexWife</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link top-menu__link_active">Измены</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link">Свободные отношения</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link">Как разнообразить совместную жизнь</a>
+          </li>
+        </ul>
+
+        <div class="top-images-center">
+          <div class="similars-image" style="background-image: url(img/big-image.jpg);">
+            <div class="similars-image-top similars-image-top_tiny">
+              <span class="similars-image-top__text similars-image-top__text_blue">Свободные отношения</span>
+            </div>
+            <p class="big-image__caption big-image__caption_center">Чем отличаются нездоровые отношения от отношений
+              партнерских и безопасных</p>
+            <div class="big-image-bottom big-image-bottom_small big-image-bottom_center">
+              <ul class="big-image-list big-image-list_center">
+                <li class="big-image-list__item big-image-list__item_oval
+               big-image-list__item_visibility">16<i></i></li>
+                <li class="big-image-list__item big-image-list__item_oval big-image-list__item_heart">16<i></i></li>
+                <li
+                  class="big-image-list__item big-image-list__item_oval big-image-list__item_comments big-image-list__item_small">
+                  16<i></i>
+                </li>
+                <li>
+                  <ul class="big-image-list big-image-list_sub">
+                    <li class="big-image-list__item big-image-list__item_author">
+                      <a href="#">Ksenia69</a>
+                    </li>
+                    <li class="big-image-list__item big-image-list__item_date">3 часа назад</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="similars-image" style="background-image: url(img/article-big6.jpg);">
+            <div class="similars-image-top similars-image-top_tiny">
+              <span class="similars-image-top__text similars-image-top__text_blue">Свободные отношения</span>
+            </div>
+            <p class="big-image__caption big-image__caption_center">Чем отличаются нездоровые отношения от отношений
+              партнерских и безопасных</p>
+            <div class="big-image-bottom big-image-bottom_small big-image-bottom_center">
+              <ul class="big-image-list big-image-list_center">
+                <li class="big-image-list__item big-image-list__item_oval
+               big-image-list__item_visibility">16<i></i></li>
+                <li class="big-image-list__item big-image-list__item_oval big-image-list__item_heart">16<i></i></li>
+                <li
+                  class="big-image-list__item big-image-list__item_oval big-image-list__item_comments big-image-list__item_small">
+                  16<i></i>
+                </li>
+                <li>
+                  <ul class="big-image-list big-image-list_sub">
+                    <li class="big-image-list__item big-image-list__item_author">
+                      <a href="#">Ksenia69</a>
+                    </li>
+                    <li class="big-image-list__item big-image-list__item_date">3 часа назад</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="top-main">
+          <h1 class="caption caption_h1 top-main__caption 
+          top-main__caption_interesting">Интересное и полезное</h1>
+          <div class="top-main-buttons">
+            <button class="button button_red button_plus"><i></i></button>
+            <a href="#" class="button button_outline top-main-buttons__more">Читать все <span
+                class="categories__amount">500+</span>
+            </a>
+          </div>
+        </div>
+        <ul class="top-menu">
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link">Для него</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link">Для неё</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link top-menu__link_active">Для пары</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link">Отели для секса</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#" class="top-menu__link">Фотосессии</a>
+          </li>
+        </ul>
+
+        <div class="top-images-center">
+          <div class="similars-image" style="background-image: url(img/article-big.jpg);">
+            <div class="similars-image-top similars-image-top_tiny">
+              <span class="similars-image-top__text similars-image-top__text_pink">Свободные отношения</span>
+            </div>
+            <ul class="similars-list similars-list_big">
+              <li class="similars-list__item similars-list__item_visibility">15<i></i></li>
+              <li class="similars-list__item similars-list__item_heart">15<i></i></li>
+              <li class="similars-list__item similars-list__item_comments">8<i></i></li>
+            </ul>
+            <p class="big-image__caption big-image__caption_center">Чем отличаются нездоровые отношения от отношений
+              партнерских и безопасных</p>
+
+            <div class="big-image-bottom big-image-bottom_small">
+              <ul class="big-image-list big-image-list-left">
+                <li class="big-image-list__item big-image-list__item_author">
+                  <a href="">Ksenia69</a>
+                </li>
+                <li class="big-image-list__item big-image-list__item_date">3 часа назад</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="similars-image similars-image_center">
+            <div class="similars-image-block similars-image-block_first">
+              <div class="similars-image-header">
+                <ul class="similars-list similars-list_center">
+                  <li class="similars-list__item similars-list__item_center
+                similars-list__item_visibility">15<i></i></li>
+                  <li class="similars-list__item similars-list__item_center similars-list__item_heart">15<i></i></li>
+                  <li class="similars-list__item  similars-list__item_center similars-list__item_comments">8<i></i></li>
+                </ul>
+                <div class="similars-image-top similars-image-top_tiny similars-image-top_black">
+                  <span class="similars-image-top__text similars-image-top__text_pink">Свободные отношения</span>
+                </div>
+              </div>
+              <p class="similars-image__caption">Как детские травмы проявляются в супружеских отношениях</p>
+              <p class="similars-image__text">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в
+                обществе:</p>
+              <p class="similars-image__author">Автор: Ksenia69</p>
+            </div>
+            <div class="similars-image-block">
+              <div class="similars-image-header">
+                <ul class="similars-list similars-list_center">
+                  <li class="similars-list__item similars-list__item_center
+                similars-list__item_visibility">15<i></i></li>
+                  <li class="similars-list__item similars-list__item_center similars-list__item_heart">15<i></i></li>
+                  <li class="similars-list__item  similars-list__item_center similars-list__item_comments">8<i></i></li>
+                </ul>
+                <div class="similars-image-top similars-image-top_tiny similars-image-top_black">
+                  <span class="similars-image-top__text similars-image-top__text_pink">Свободные отношения</span>
+                </div>
+              </div>
+              <p class="similars-image__caption">Как детские травмы проявляются в супружеских отношениях</p>
+              <p class="similars-image__text">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в
+                обществе:</p>
+              <p class="similars-image__author">Автор: Ksenia69</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <aside class="aside">
+          <p class="aside__caption">Популярные категории:</p>
+          <ul class="categories">
+            <li class="categories__item">
+              <span class="categories__text">Пара ищет</span>
+              <span class="categories__amount">+28</span>
+            </li>
+            <li class="categories__item">
+              <span class="categories__text">Места для свиданий</span>
+              <span class="categories__amount">+7</span>
+            </li>
+            <li class="categories__item">
+              <span class="categories__text">Отели для секса</span>
+              <span class="categories__amount">+3</span>
+            </li>
+            <li class="categories__item">
+              <span class="categories__text">Свободные отношения</span>
+              <span class="categories__amount">+14</span>
+            </li>
+            <li class="categories__item">
+              <span class="categories__text">Для пары</span>
+              <span class="categories__amount">+9</span>
+            </li>
+          </ul>
+          <p class="aside__caption">Следите за нами в соцсетях::</p>
+          <ul class="socials">
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link_telegram"></a>
+              <span>3 567 подписчиков</span>
+            </li class="socials__item">
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link_facebook"></a>
+              <span>18966 подписчиков</span>
+            </li class="socials__item">
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link_twitter"></a>
+              <span>285 подписчиков</span>
+            </li class="socials__item">
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link_vk"></a>
+              <span>4 741 подписчиков</span>
+            </li class="socials__item">
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link_instagram"></a>
+              <span>18069 подписчиков</span>
+            </li class="socials__item">
+          </ul>
+          <p class="aside__caption">Самые обсуждаемые посты и статьи:</p>
+          <ul class="posts-list">
+            <li class="posts-list__item">
+              <img src="/img/post.jpg" alt="post" class="posts-list__image">
+              <div class="posts-list__content">
+                <a href="#" class="posts-list__text">История о том, как я впервые зашел на этот сайт...</a>
+                <span class="posts-list__author">Ksenia69</span class="posts-list__text">
+              </div>
+            </li>
+            <li class="posts-list__item">
+              <img src="/img/post.jpg" alt="post" class="posts-list__image">
+              <div class="posts-list__content">
+                <a href="#" class="posts-list__text">История о том, как я впервые зашел на этот сайт...</a>
+                <span class="posts-list__author">Ksenia69</span class="posts-list__text">
+              </div>
+            </li>
+            <li class="posts-list__item">
+              <img src="/img/post.jpg" alt="post" class="posts-list__image">
+              <div class="posts-list__content">
+                <a href="#" class="posts-list__text">История о том, как я впервые зашел на этот сайт...</a>
+                <span class="posts-list__author">Ksenia69</span class="posts-list__text">
+              </div>
+            </li>
+            <li class="posts-list__item">
+              <img src="/img/post.jpg" alt="post" class="posts-list__image">
+              <div class="posts-list__content">
+                <a href="#" class="posts-list__text">История о том, как я впервые зашел на этот сайт...</a>
+                <span class="posts-list__author">Ksenia69</span class="posts-list__text">
+              </div>
+            </li>
+            <li class="posts-list__item">
+              <img src="/img/post.jpg" alt="post" class="posts-list__image">
+              <div class="posts-list__content">
+                <a href="#" class="posts-list__text">История о том, как я впервые зашел на этот сайт...</a>
+                <span class="posts-list__author">Ksenia69</span class="posts-list__text">
+              </div>
+            </li>
+            <li class="posts-list__item">
+              <img src="/img/post.jpg" alt="post" class="posts-list__image">
+              <div class="posts-list__content">
+                <a href="#" class="posts-list__text">История о том, как я впервые зашел на этот сайт...</a>
+                <span class="posts-list__author">Ksenia69</span class="posts-list__text">
+              </div>
+            </li>
+          </ul>
+          <p class="aside__caption">Самое интересное в нашем Instagram:</p>
+          <div class="aside-gallery">
+            <a href="#" class="aside-gallery__item">
+              <img src="/img/instagram.jpg" alt="instagram">
+            </a>
+            <a href="#" class="aside-gallery__item">
+              <img src="/img/instagram.jpg" alt="instagram">
+            </a>
+            <a href="#" class="aside-gallery__item">
+              <img src="/img/instagram.jpg" alt="instagram">
+            </a>
+            <a href="#" class="aside-gallery__item">
+              <img src="/img/instagram.jpg" alt="instagram">
+            </a>
+            <a href="#" class="aside-gallery__item">
+              <img src="/img/instagram.jpg" alt="instagram">
+            </a>
+            <a href="#" class="aside-gallery__item">
+              <img src="/img/instagram.jpg" alt="instagram">
+            </a>
+            <a href="#" class="aside-gallery__item">
+              <img src="/img/instagram.jpg" alt="instagram">
+            </a>
+            <a href="#" class="aside-gallery__item">
+              <img src="/img/instagram.jpg" alt="instagram">
+            </a>
+            <a href="#" class="aside-gallery__item">500+</a>
+          </div>
+        </aside>
+        <div class="aside-ad">
+          <span>Пример баннера</span>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="top-main">
+        <h1 class="caption caption_h1 top-main__caption top-main__caption_fetish">BDSM и фетиш</h1>
+        <div class="top-main-buttons">
+          <button class="button button_red button_plus"><i></i></button>
+          <a href="#" class="button button_outline top-main-buttons__more">Читать все <span
+              class="categories__amount">500+</span>
+          </a>
+        </div>
+      </div>
+      <ul class="top-menu">
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Основные правила и советы</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link top-menu__link_active">Для новичков</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Госпожа</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Господин</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Фотосессии</a>
+        </li>
+      </ul>
+
+      <div class="top-images-center top-images-center_four">
+        <div class="similars-image" style="background-image: url(img/article-big3.jpg);">
+          <div class="similars-image-top similars-image-top_tiny">
+            <span class="similars-image-top__text similars-image-top__text_blue">Отношения в парахя</span>
+          </div>
+          <p class="big-image__caption big-image__caption_four">Чем отличаются нездоровые отношения от отношений
+            партнерских и безопасных</p>
+          <div class="big-image-bottom big-image-bottom_small big-image-bottom_center">
+            <ul class="big-image-list big-image-list_center">
+              <li class="big-image-list__item big-image-list__item_visibility">16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_heart">16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_comments 
+              big-image-list__item_small">16<i></i></li>
+              <li>
+                <ul class="big-image-list big-image-list_sub big-image-list_once">
+                  <li class="big-image-list__item big-image-list__item_author">
+                    <a href="#">Ksenia69</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="similars-image" style="background-image: url(img/article-7.jpg);">
+          <div class="similars-image-top similars-image-top_tiny">
+            <span class="similars-image-top__text similars-image-top__text_blue">Отношения в парах</span>
+          </div>
+          <p class="big-image__caption big-image__caption_four">Чем отличаются нездоровые отношения от отношений
+            партнерских и безопасных</p>
+          <div class="big-image-bottom big-image-bottom_small big-image-bottom_center">
+            <ul class="big-image-list big-image-list_center">
+              <li class="big-image-list__item big-image-list__item_visibility">16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_heart">16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_comments big-image-list__item_small">
+                16<i></i></li>
+              <li>
+                <ul class="big-image-list big-image-list_sub big-image-list_once">
+                  <li class="big-image-list__item big-image-list__item_author">
+                    <a href="#">Ksenia69</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="similars-image" style="background-image: url(img/big-image.jpg);">
+          <div class="similars-image-top similars-image-top_tiny">
+            <span class="similars-image-top__text similars-image-top__text_blue">Отношения в парах</span>
+          </div>
+          <p class="big-image__caption big-image__caption_four">Чем отличаются нездоровые отношения от отношений
+            партнерских и безопасных</p>
+          <div class="big-image-bottom big-image-bottom_small big-image-bottom_center">
+            <ul class="big-image-list big-image-list_center">
+              <li class="big-image-list__item big-image-list__item_visibility">16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_heart">16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_comments big-image-list__item_small">
+                16<i></i></li>
+              <li>
+                <ul class="big-image-list big-image-list_sub big-image-list_once">
+                  <li class="big-image-list__item big-image-list__item_author">
+                    <a href="#">Ksenia69</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="similars-image" style="background-image: url(img/article-big1.jpg);">
+          <div class="similars-image-top similars-image-top_tiny">
+            <span class="similars-image-top__text similars-image-top__text_blue">Отношения в парах</span>
+          </div>
+          <p class="big-image__caption big-image__caption_four">Чем отличаются нездоровые отношения от отношений
+            партнерских и безопасных</p>
+          <div class="big-image-bottom big-image-bottom_small big-image-bottom_center">
+            <ul class="big-image-list big-image-list_center">
+              <li class="big-image-list__item big-image-list__item_visibility">16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_heart">16<i></i></li>
+              <li class="big-image-list__item big-image-list__item_comments big-image-list__item_small">
+                16<i></i></li>
+              <li>
+                <ul class="big-image-list big-image-list_sub big-image-list_once">
+                  <li class="big-image-list__item big-image-list__item_author">
+                    <a href="#">Ksenia69</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-main">
+        <h1 class="caption caption_h1 top-main__caption top-main__caption_teaching">Обучение</h1>
+        <div class="top-main-buttons">
+          <button class="button button_red button_plus"><i></i></button>
+          <a href="#" class="button button_outline top-main-buttons__more">Читать все <span
+              class="categories__amount">500+</span>
+          </a>
+        </div>
+      </div>
+      <ul class="top-menu">
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Курсы секса</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Курсы минета</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link top-menu__link_active">Offline обучение</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Курсы по раскрепощению</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Обучение для мужчин</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Обучение для женщин</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Гипнооргазм</a>
+        </li>
+      </ul>
+
+      <ul class="similars">
+        <li class="similars__item">
+          <div class="similars-image" style="background-image: url('img/article-big3.jpg');">
+            <ul class="similars-list similars-list_empty">
+              <li class="similars-list__item similars-list__item_visibility">15<i></i></li>
+              <li class="similars-list__item similars-list__item_heart">15<i></i></li>
+              <li class="similars-list__item similars-list__item_comments">8<i></i></li>
+            </ul>
+          </div>
+        </li>
+        <li class="similars__item">
+          <div class="similars-image similars-image_zero">
+            <div class="similars-image-top similars-image-top_black">
+              <span class="similars-image-top__text similars-image-top__text_green">Мужчина ищет</span>
+            </div>
+          </div>
+          <p class="similars__caption similars__caption_bigger">История о том, как я впервые зашел на этот сайт</p>
+          <p class="similars__text">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+          <ul class="similars-details">
+            <li class="similars-details__item">Ksenia69</li>
+          </ul>
+        </li>
+        <li class="similars__item">
+          <div class="similars-image" style="background-image: url('img/article2.jpg');">
+            <ul class="similars-list similars-list_empty">
+              <li class="similars-list__item similars-list__item_visibility">15<i></i></li>
+              <li class="similars-list__item similars-list__item_heart">15<i></i></li>
+              <li class="similars-list__item similars-list__item_comments">8<i></i></li>
+            </ul>
+          </div>
+        </li>
+        <li class="similars__item">
+          <div class="similars-image similars-image_zero">
+            <div class="similars-image-top similars-image-top_black">
+              <span class="similars-image-top__text similars-image-top__text_green">Мужчина ищет</span>
+            </div>
+          </div>
+          <p class="similars__caption similars__caption_bigger">История о том, как я впервые зашел на этот сайт</p>
+          <p class="similars__text">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+          <ul class="similars-details">
+            <li class="similars-details__item">Ksenia69</li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="top-main">
+        <h1 class="caption caption_h1 top-main__caption top-main__caption_accessories">Одежда и аксессуары</h1>
+        <div class="top-main-buttons">
+          <button class="button button_red button_plus"><i></i></button>
+          <a href="#" class="button button_outline top-main-buttons__more">Читать все <span
+              class="categories__amount">500+</span>
+          </a>
+        </div>
+      </div>
+      <ul class="top-menu">
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Сексшопы</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Инстаграм магазины</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link top-menu__link_active">Кожанные изделия</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Подарки</a>
+        </li>
+      </ul>
+
+      <div class="top-images-center top-images-center_three">
+        <div class="similars-image" style="background-image: url(img/article-big.jpg);">
+          <div class="similars-image-top similars-image-top_average">
+            <span class="similars-image-top__text similars-image-top__text_green">Свободные отношения</span>
+          </div>
+          <p class="big-image__caption big-image__caption_center">Чем отличаются нездоровые отношения от отношений
+            партнерских и безопасных</p>
+          <div class="big-image-bottom big-image-bottom_small big-image-bottom_center">
+            <ul class="big-image-list big-image-list_accessories">
+              <li class="big-image-list__item big-image-list__item_visibility">15<i></i></li>
+              <li class="big-image-list__item big-image-list__item_heart">15<i></i></li>
+              <li class="big-image-list__item big-image-list__item_comments 
+              big-image-list__item_small">8<i></i></li>
+              <li>
+                <ul class="big-image-list big-image-list_sub big-image-list_fullwidth">
+                  <li class="big-image-list__item big-image-list__item_author">
+                    <a href="#">Ksenia69</a>
+                  </li>
+                  <li class="big-image-list__item big-image-list__item_date">3 часа назад</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="similars-image" style="background-image: url(img/big-image.jpg);">
+          <div class="similars-image-top similars-image-top_average">
+            <span class="similars-image-top__text similars-image-top__text_green">Свободные отношения</span>
+          </div>
+          <p class="big-image__caption big-image__caption_center">Чем отличаются нездоровые отношения от отношений
+            партнерских и безопасных</p>
+          <div class="big-image-bottom big-image-bottom_small big-image-bottom_center">
+            <ul class="big-image-list big-image-list_accessories">
+              <li class="big-image-list__item big-image-list__item_visibility">15<i></i></li>
+              <li class="big-image-list__item big-image-list__item_heart">15<i></i></li>
+              <li class="big-image-list__item big-image-list__item_comments 
+              big-image-list__item_small">8<i></i></li>
+              <li>
+                <ul class="big-image-list big-image-list_sub big-image-list_fullwidth">
+                  <li class="big-image-list__item big-image-list__item_author">
+                    <a href="#">Ksenia69</a>
+                  </li>
+                  <li class="big-image-list__item big-image-list__item_date">3 часа назад</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="similars-image" style="background-image: url(img/article-big7.jpg);">
+          <div class="similars-image-top similars-image-top_average">
+            <span class="similars-image-top__text similars-image-top__text_green">Свободные отношения</span>
+          </div>
+          <p class="big-image__caption big-image__caption_center">Чем отличаются нездоровые отношения от отношений
+            партнерских и безопасных</p>
+          <div class="big-image-bottom big-image-bottom_small big-image-bottom_center">
+            <ul class="big-image-list big-image-list_accessories">
+              <li class="big-image-list__item big-image-list__item_visibility">15<i></i></li>
+              <li class="big-image-list__item big-image-list__item_heart">15<i></i></li>
+              <li class="big-image-list__item big-image-list__item_comments 
+              big-image-list__item_small">8<i></i></li>
+              <li>
+                <ul class="big-image-list big-image-list_sub big-image-list_fullwidth">
+                  <li class="big-image-list__item big-image-list__item_author">
+                    <a href="#">Ksenia69</a>
+                  </li>
+                  <li class="big-image-list__item big-image-list__item_date">3 часа назад</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-ad">
+        <span>Пример баннера</span>
+      </div>
+      <div class="top-main">
+        <h1 class="caption caption_h1 top-main__caption top-main__caption_party">Тусовки</h1>
+        <div class="top-main-buttons">
+          <button class="button button_red button_plus"><i></i></button>
+          <a href="#" class="button button_outline top-main-buttons__more">Читать все <span
+              class="categories__amount">500+</span>
+          </a>
+        </div>
+      </div>
+      <ul class="top-menu">
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Свинг клубы</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Тематические вечеринки</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link">Клубы и бары</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="#" class="top-menu__link top-menu__link_active">Swing и SexWife тусовки</a>
+        </li>
+      </ul>
+
+      <ul class="similars">
+        <li class="similars__item">
+          <div class="similars-image" style="background-image: url('img/article.jpg');">
+            <div class="similars-image-top">
+              <span class="similars-image-top__text">Мужчина ищет</span>
+            </div>
+            <ul class="similars-list">
+              <li class="similars-list__item similars-list__item_visibility">15<i></i></li>
+              <li class="similars-list__item similars-list__item_heart">15<i></i></li>
+              <li class="similars-list__item similars-list__item_comments">8<i></i></li>
+            </ul>
+          </div>
+          <p class="similars__caption">История о том, как я впервые зашел на этот сайт</p>
+          <p class="similars__text">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+          <ul class="similars-details">
+            <li class="similars-details__item">Ksenia69</li>
+            <li class="similars-details__item similars-details__item_history"><i></i>3 часа назад</li>
+          </ul>
+        </li>
+        <li class="similars__item">
+          <div class="similars-image" style="background-image: url('img/article1.jpg');">
+            <div class="similars-image-top">
+              <span class="similars-image-top__text">Мужчина ищет</span>
+            </div>
+            <ul class="similars-list">
+              <li class="similars-list__item similars-list__item_visibility">15<i></i></li>
+              <li class="similars-list__item similars-list__item_heart">15<i></i></li>
+              <li class="similars-list__item similars-list__item_comments">8<i></i></li>
+            </ul>
+          </div>
+          <p class="similars__caption">История о том, как я впервые зашел на этот сайт</p>
+          <p class="similars__text">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+          <ul class="similars-details">
+            <li class="similars-details__item">Ksenia69</li>
+            <li class="similars-details__item similars-details__item_history"><i></i>3 часа назад</li>
+          </ul>
+        </li>
+        <li class="similars__item">
+          <div class="similars-image" style="background-image: url('img/article2.jpg');">
+            <div class="similars-image-top">
+              <span class="similars-image-top__text">Мужчина ищет</span>
+            </div>
+            <ul class="similars-list">
+              <li class="similars-list__item similars-list__item_visibility">15<i></i></li>
+              <li class="similars-list__item similars-list__item_heart">15<i></i></li>
+              <li class="similars-list__item similars-list__item_comments">8<i></i></li>
+            </ul>
+          </div>
+          <p class="similars__caption">История о том, как я впервые зашел на этот сайт</p>
+          <p class="similars__text">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+          <ul class="similars-details">
+            <li class="similars-details__item">Ksenia69</li>
+            <li class="similars-details__item similars-details__item_history"><i></i>3 часа назад</li>
+          </ul>
+        </li>
+        <li class="similars__item">
+          <div class="similars-image" style="background-image: url('img/article3.jpg');">
+            <div class="similars-image-top">
+              <span class="similars-image-top__text">Мужчина ищет</span>
+            </div>
+            <ul class="similars-list">
+              <li class="similars-list__item similars-list__item_visibility">15<i></i></li>
+              <li class="similars-list__item similars-list__item_heart">15<i></i></li>
+              <li class="similars-list__item similars-list__item_comments">8<i></i></li>
+            </ul>
+          </div>
+          <p class="similars__caption">История о том, как я впервые зашел на этот сайт</p>
+          <p class="similars__text">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+          <ul class="similars-details">
+            <li class="similars-details__item">Ksenia69</li>
+            <li class="similars-details__item similars-details__item_history"><i></i>3 часа назад</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="footer clearfix">
+    <div class="wrap">
+      <div class="footer__wrap">
+        <div class="footer-socials">
+          <a href="/" class="footer-socials__logo"></a>
+          <ul class="footer-socials-list">
+            <li>
+              <a href="#" class="footer-socials-list__link footer-socials-list__link_telegram"></a>
+            </li>
+            <li>
+              <a href="#" class="footer-socials-list__link footer-socials-list__link_instagram"></a>
+            </li>
+            <li>
+              <a href="#" class="footer-socials-list__link footer-socials-list__link_vk"></a>
+            </li>
+            <li>
+              <a href="#" class="footer-socials-list__link footer-socials-list__link_twitter"></a>
+            </li>
+            <li>
+              <a href="#" class="footer-socials-list__link footer-socials-list__link_facebook"></a>
+            </li>
+          </ul>
+          <p class="footer-socials__text">Мы позиционируем себя как новую социальную сеть, где любой желающий может
+            анонимно говорить и задать вопросы, писать свое мнение</p>
+          <a href="#" class="footer-socials__more">Читать подробнее о проекте</a>
+          <p class="footer-socials__caution">Материалы сайта предназначены для возрасной категории 18+</p>
+        </div>
+        <ul class="footer-menu footer-menu_big">
+          <li>
+            <a href="#">Знакомства и свидания</a>
+          </li>
+          <li>
+            <a href="#">Отношения в парах</a>
+          </li>
+          <li>
+            <a href="#">Полезное и интересное</a>
+          </li>
+          <li>
+            <a href="#">BDSM и Фетиш</a>
+          </li>
+          <li>
+            <a href="#">Обучение</a>
+          </li>
+          <li>
+            <a href="#">Одежда и аксессуары</a>
+          </li>
+          <li>
+            <a href="#">Тусовки</a>
+          </li>
+          <li>
+            <a href="#">Все авторы</a>
+          </li>
+        </ul>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe__caption">Подпишитесь на уведомления</p>
+          <p class="footer-subscribe__info">Саатьи, новости ресурса и уведомления</p>
+          <form action="" method="post" class="footer-form">
+            <input type="email" class="footer-form__input" placeholder="Введите E-mail">
+            <input type="submit" class="footer-form__submit button button_red" value="Подписаться">
+          </form>
+        </div>
+        <div class="footer-profile">
+          <a href="#" class="header__profile header__profile_outline button button_outline">
+            <span class="header__span">Профиль</span>
+          </a>
+          <ul class="footer-menu footer-menu_right">
+            <li>
+              <a href="#">Политика конфиденциальности</a>
+            </li>
+            <li>
+              <a href="#">О проекте</a>
+            </li>
+            <li>
+              <a href="#">Правила</a>
+            </li>
+          </ul>
+          <p class="footer__copyright">2020 &copy; Все права защищены</p>
+          <p class="footer__logo-maximus">Разработка и продвижение сайта</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

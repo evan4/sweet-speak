@@ -1,0 +1,23 @@
+.footer-subscribe {
+  padding: 10px 30px;
+  border-radius: 15px;
+
+  background: $color-gray;
+  text-align: center;
+
+  &__caption {
+    margin: 22px 0 0 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+  }
+
+  &__info {
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+  }
+}

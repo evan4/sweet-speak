@@ -1,0 +1,105 @@
+.footer {
+  padding-top: 60px;
+  background-color: $color-white;
+
+  &__wrap {
+    div {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__copyright {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__logo-maximus {
+    position: relative;
+    max-width: 130px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: url('../images/logo-maximus.svg') no-repeat center;
+      background-size: cover;
+      height: 30px;
+      width: 100px;
+      top: 0;
+      right: -100px;
+    }
+
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .footer {
+
+    &__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      div {
+        width: 49%;
+      }
+    }
+
+    &-menu_big {
+      padding: 0;
+    }
+
+    &-profile {
+      padding: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .footer {
+
+    &__wrap {
+      justify-content: space-between;
+
+      div {
+        width: 32%;
+      }
+
+      &-menu_big {
+        padding: 0;
+      }
+
+      &-profile {
+        padding: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .footer {
+
+      &__wrap {
+        div {
+          width: 24%;
+        }
+      }
+
+      &-menu_big {
+        padding: 0 3%;
+      }
+
+      &-profile {
+        padding: 0 0 0 5%;
+      }
+    }
+  }
+}
