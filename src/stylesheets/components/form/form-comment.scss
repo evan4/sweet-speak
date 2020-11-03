@@ -1,14 +1,15 @@
 .form-comment {
   margin-bottom: 40px;
+  position: relative;
 
   &__label {
-    display: block;
-    margin: 0 0 -13px 42px;
+    position: absolute;
     background: $background-body;
     font-size: 15px;
     font-weight: 600;
-    line-height: 26px;
-
+    top: -12px;
+    left: 36px;
+    padding: 5px 10px;
   }
 
   &__textarea {

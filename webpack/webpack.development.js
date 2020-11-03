@@ -23,6 +23,10 @@ const development = {
       filename: 'add.html',
       template: 'add.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'profile.html',
+      template: 'profile.html',
+    }),
     new MiniCssExtractPlugin({
       filename: filename('css')
     })

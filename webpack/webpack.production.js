@@ -61,6 +61,19 @@ const production = {
         keepClosingSlash: true,
       }
     }),
+    new HtmlWebpackPlugin({
+      filename: 'profile.html',
+      template: 'profile.html',
+      minify:{
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+      }
+    }),
     new MiniCssExtractPlugin({
       filename: filename('css')
     }),

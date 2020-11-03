@@ -77,10 +77,6 @@ $grid-breakpoints: (xs: 0,
   }
 }
 
-@include media-breakpoint-up(xs) {}
-
-@include media-breakpoint-up(sm) {}
-
 @include media-breakpoint-up(md) {
   .col-4 {
     float: left;
@@ -91,6 +87,11 @@ $grid-breakpoints: (xs: 0,
 @include media-breakpoint-up(lg) {
   .col-4 {
     width: 32%;
+  }
+
+  .col-6 {
+    float: left;
+    width: 49%;
   }
 
   .col-9 {
@@ -112,5 +113,4 @@ $grid-breakpoints: (xs: 0,
   .col-4 {
     width: 25%;
   }
-
 }

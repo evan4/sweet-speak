@@ -6,7 +6,6 @@
     div {
       margin-bottom: 20px;
     }
-
   }
 
   &__copyright {
@@ -26,7 +25,9 @@
     line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
-
+    a{
+      color: inherit;
+    }
     &::after {
       content: '';
       position: absolute;

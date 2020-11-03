@@ -1,0 +1,44 @@
+.profile-list {
+  &__item {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 500;
+
+    &:before {
+      display: inline-block;
+      vertical-align: middle;
+      content: '';
+      background-color: $color-black;
+      width: 18px;
+      height: 18px;
+      margin-right: 11px;
+    }
+
+    &_available {
+      margin-right: 15px;
+
+      &:before {
+        -webkit-mask-image: url('../images/check-circle.svg');
+        mask-image: url('../images/check-circle.svg');
+      }
+    }
+
+    &_experience {
+      &:before {
+        -webkit-mask-image: url('../images/calendar.svg');
+        mask-image: url('../images/calendar.svg');
+      }
+    }
+
+    &_active {
+      color: $color-red;
+
+      &:before {
+        background-color: $color-red;
+      }
+    }
+  }
+}

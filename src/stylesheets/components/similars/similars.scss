@@ -148,6 +148,9 @@
     font-weight: 300;
     line-height: 23px;
   }
+  &_profile{
+    margin-top: 20px;
+  }
 }
 
 @include media-breakpoint-up(xs) {

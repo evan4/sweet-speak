@@ -88,6 +88,11 @@ a {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -100vw;
+}
+
 @include media-breakpoint-up(xs) {
   .caption {
     line-height: 25px;

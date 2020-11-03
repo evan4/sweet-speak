@@ -43,7 +43,7 @@
 @import './components/comments';
 
 @import './components/article-night';
-@import './components/form-comment';
+
 @import './components/similars/similars';
 @import './components/similars/similars-list-night';
 @import './components/similars/similars-details';
@@ -51,3 +51,10 @@
 @import './components/apps';
 @import './components/notfound';
 @import './components/form/form';
+@import './components/form/form-comment';
+
+@import './components/profile/profile';
+@import './components/profile/profile-list';
+@import './components/profile/profile-info';
+
+@import './components/modal';

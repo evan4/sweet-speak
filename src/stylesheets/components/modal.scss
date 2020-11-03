@@ -1,0 +1,141 @@
+.modal {
+  position: relative;
+  background: $color-white;
+  width: auto;
+  max-width: 550px;
+  margin: 20px auto;
+  border-radius: 15px;
+  padding: 30px 2%;
+
+  &__caption {
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+
+  }
+
+  &__promo {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &-form {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+
+    &-block {
+      position: relative;
+
+      &_first {
+        margin-bottom: 30px;
+      }
+
+      &_checkbox {
+        margin-top: 20px;
+        margin-bottom: 37px;
+      }
+    }
+
+    &__label {
+      position: absolute;
+      background: $color-white;
+      font-size: 15px;
+      font-weight: 600;
+      top: -12px;
+      left: 36px;
+      padding: 5px 10px;
+    }
+
+    &__input {
+      width: 100%;
+      padding: 29px 0;
+      text-indent: 42px;
+      border-radius: 999px;
+      background-color: $color-white;
+    }
+
+    &__checkboxlabel {
+      display: block;
+      padding: 0 0 0 35px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    &__check {
+      display: block;
+      float: left;
+
+      &:checked~.modal-form__checkbox::after {
+        content: "";
+        background: url('../images/checked.svg') no-repeat center;
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &__checkbox {
+      &::after {
+        content: "";
+        display: block;
+        float: left;
+        background: url('../images/unchecked.svg') no-repeat center;
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &__show {
+      position: absolute;
+      background-color: $color-black;
+      -webkit-mask-image: url('../images/eye.svg');
+      mask-image: url('../images/eye.svg');
+      width: 18px;
+      height: 18px;
+      right: 32px;
+      top: 32px;
+    }
+
+    &__submit {
+      width: 100%;
+      padding: 26px 0;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 26px;
+      text-align: center;
+      color:$color-black;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(xs) {
+  .modal {
+    &__caption {
+      font-size: 25px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .modal {
+    &__caption {
+      font-size: 30px;
+    }
+
+    &__promo {
+      padding: 0 10%;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .modal {
+    &__caption {
+      font-size: 38px;
+    }
+  }
+}

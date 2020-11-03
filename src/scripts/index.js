@@ -1,7 +1,6 @@
 
-import * as $ from 'jquery';
-import './selectize';
-import './jquery.magnific-popup-inline';
+import 'selectize';
+import 'magnific-popup/dist/jquery.magnific-popup';
 
 import '../stylesheets/day.scss';
 //import '../stylesheets/night.scss';
@@ -17,6 +16,13 @@ $(function($) {
     },
     dropdownParent: 'body'
   });
+
+  if($('#profile').length){
+    $('#profile').magnificPopup({
+      type:'inline',
+      midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    });
+  }
 
 });
 

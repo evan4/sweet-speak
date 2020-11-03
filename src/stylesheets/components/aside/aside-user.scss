@@ -28,6 +28,9 @@
       -webkit-mask-image: url('../images/pen.svg');
       mask-image: url('../images/pen.svg');
     }
+    &_profile{
+      position: relative;
+    }
   }
 
   &__name {
